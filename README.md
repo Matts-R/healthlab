@@ -1,4 +1,5 @@
 # Health Lab
+[![NPM](https://img.shields.io/apm/l/react?style=for-the-badge)](https://github.com/Matts-R/healthlab/blob/main/LICENSE)
 ## Health Lab é um projeto com fins não lucrativos com a itenção integrar tecnologia à saúde.
 
 <p align="center">
@@ -50,13 +51,13 @@ $ npm run dev:server
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- 
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [Node.js](https://nodejs.org/en/)
-- 
-- 
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS](https://www.w3schools.com/css/)
 - 
 
-## Contribuidores
+## Integrantes do grupo
 ---
 
 <table>
@@ -67,40 +68,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
     <td align="center"><a href="https://www.linkedin.com/in/gustavo-cristhian-581814165/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/80134399?v=4" width="100px;" alt=""/><br /><b>Gustavo Christhian<br>LinkedIn </b></a><br /><a href="https://github.com/gu3800" title="Git-Hub"><sub>Git-Hub</sub></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://www.linkedin.com/in/david-jacobis-2b2bb6196/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/79882277?s=60&v=4" width="100px;" alt=""/><br /><b>Gustavo Christhian<br>LinkedIn </b></a><br /><a href="https://github.com/gu3800" title="Git-Hub"><sub>Git-Hub</sub></a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/david-jacobis-2b2bb6196/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/79882277?s=60&v=4" width="100px;" alt=""/><br /><sub><b>David Jacobis<br>LinkedIn </b></sub></a><br /><a href="https://www.linkedin.com/in/david-jacobis-2b2bb6196/ title="Linkedin">👨‍🚀</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/david-jacobis-2b2bb6196/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/79882277?s=60&v=4" width="100px;" alt=""/><br /><sub><b>David Jacobis<br>LinkedIn </b></sub></a><br /><a href="https://www.linkedin.com/in/david-jacobis-2b2bb6196/ title="Linkedin">👨‍🚀</a></td>
-    <td align="center"><a href="https://www.instagram.com/kkau_sm//"><img style="border-radius: 50%;" src="https://instagram.fplu9-1.fna.fbcdn.net/v/t51.2885-19/s150x150/167416728_1360973667594199_1328727645316519527_n.jpg?tp=1&_nc_ht=instagram.fplu9-1.fna.fbcdn.net&_nc_ohc=H9jEj6rQ1BQAX84Ucs6&edm=ABfd0MgBAAAA&ccb=7-4&oh=276080dd4874ed605f8a709b25c08895&oe=60ADA673&_nc_sid=7bff83" width="100px;" alt=""/><br /><b>Cláudia Monteiro<br>LinkedIn </b></a><br /></td>
+    <td align="center"><a href="https://www.linkedin.com/in/pedro-coutinho-898ba4210/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/79882234?v=4" width="100px;" alt=""/><br /><b>Matheus Henrique<br>LinkedIn </b></a><br /><a href="https://github.com/PedroHGCoutinho" title="Git-Hub"><sub>Git-Hub</sub></a></td>
+    <td align="center"><a href="http://www.linkedin.com/in/leonardohas"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/83249141?v=4" width="100px;" alt=""/><br /><b>Leonardo Henrique<br>LinkedIn </b></a><br /><a href="https://github.com/Leonardohas" title="Git-Hub"><sub>Git-Hub</sub></a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/pedro-coutinho-898ba4210/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/79882234?v=4" width="100px;" alt=""/><br /><b>Pedro Coutinho<br>LinkedIn </b></a><br /><a href="https://github.com/PedroHGCoutinho" title="Git-Hub"><sub>Git-Hub</sub></a></td>
+    <td align="center"><a href="http://linkedin.com/in/cl%C3%A1udia-monteiro-751b72112"><img style="border-radius: 50%;" src="https://instagram.fplu9-1.fna.fbcdn.net/v/t51.2885-19/s150x150/167416728_1360973667594199_1328727645316519527_n.jpg?tp=1&_nc_ht=instagram.fplu9-1.fna.fbcdn.net&_nc_ohc=H9jEj6rQ1BQAX84Ucs6&edm=ABfd0MgBAAAA&ccb=7-4&oh=276080dd4874ed605f8a709b25c08895&oe=60ADA673&_nc_sid=7bff83" width="100px;" alt=""/><br /><b>Cláudia Monteiro<br>LinkedIn </b></a><br /><a href="https://www.instagram.com/kkau_sm/" title="Instagram"><sub>Instagram</sub></a></td>
   </tr>
 </table>
 
-
-### Autores
 ---
-
-<a href="https://www.linkedin.com/in/david-jacobis/">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/79882277?s=400&u=5b89e0ae40e565f9ce16bb76cd526d0e187c0dd7&v=4" width="100px;" alt=""/>
- <br />
- <sub><b>David Jacobis</b></sub></a> <a href="https://www.linkedin.com/in/david-jacobis/" title="Linkedin"></a>
-
-
-Feito por David Jacobis👋🏽 Entre em contato!
-
-[![Instagram Badge](https://img.shields.io/badge/Instagram-@david.jacobis-E4405F?style=for-the-badge&logo=instagram&logoColor=white&link=https://instagram.com/david.jacobis)](https://www.instagram.com/david.jacobis/)
-
-
-
-
-<a href="https://www.linkedin.com/in/rafael-martins-silva/">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/80134985?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Rafael Martins</b></sub></a> <a href="https://www.linkedin.com/in/rafael-martins-silva/" title="Linkedin"></a>
-
-
-Feito por Rafael Martins 👋🏽 Entre em contato!
-
-[![Instagram Badge](https://img.shields.io/badge/Instagram-@rafas.ms-E4405F?style=for-the-badge&logo=instagram&logoColor=white&link=https://www.instagram.com/rafas.ms)](https://www.instagram.com/rafas.ms/)
-
 
 <h4 align="center"> 
 	🚧  Projeto 🚀 Em construção...  🚧
