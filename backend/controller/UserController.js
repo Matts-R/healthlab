@@ -5,7 +5,6 @@ class UserController {
   async createUser(req, res) {
     const userData = req.body;
     const transaction = await sequelize.transaction();
-
     try {
       const userCreated = await User.create(
         {

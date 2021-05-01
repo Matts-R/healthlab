@@ -29,7 +29,7 @@ class PostTagController {
 
   async getOne(req, res) {
     try {
-      const result = await PostTag.findbyPk(req.params.id);
+      const result = await PostTag.findByPk(req.params.id);
       return res.status(400).json(result);
     } catch (err) {
       return res.status(400).json({ error: err.mesage });
@@ -38,7 +38,7 @@ class PostTagController {
 
   async update(req, res) {
     try {
-      const result = await PostTag.findbyPk(req.params.id);
+      const result = await PostTag.findByPk(req.params.id);
       if (result) {
         await result.update(req.body);
         return res.status(200).json(result);
