@@ -7,6 +7,6 @@ app.use(cors());
 app.use(express.json());
 app.use(router);
 
-app.listen(5000, () => {
+app.listen(5000, async () => {
   console.log("Server up on port 3000");
 });
