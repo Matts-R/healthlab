@@ -1,0 +1,188 @@
+*:focus {
+  outline: none;
+}
+
+.login-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.background-clip-image {
+  clip-path: polygon(0% 0%, 100% 0, 70% 50%, 100% 100%, 0% 100%);
+}
+
+.background-gradient {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgb(233, 229, 246) 100.2%
+  );
+}
+
+.login-side {
+  display: grid;
+  grid-template-rows: 20vh 80vh;
+}
+
+.btn-login-options {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.img-btn {
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  margin-right: 1.7rem;
+  margin-left: 1.1rem;
+
+  transition: opacity 0.2s ease-in-out;
+}
+
+.img-btn-register {
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  margin-right: 1.2rem;
+  margin-left: 1rem;
+
+  transition: opacity 0.2s ease-in-out;
+}
+
+.bt-options {
+  cursor: pointer;
+  margin-left: 5rem;
+
+  border-radius: 5px;
+  border: 0px solid transparent;
+  transition: opacity 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.bt-options:hover {
+  opacity: 0.7;
+}
+
+.bt-options:hover > img {
+  opacity: 1;
+}
+
+.login-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about {
+  padding-top: 9rem;
+}
+
+.text-about {
+  text-align: justify;
+  margin: 0px;
+  padding: 1rem 3rem;
+}
+
+.form-fields {
+  width: 31.25rem;
+  height: 31.25rem;
+  margin-top: -3rem;
+
+  align-self: center;
+  justify-self: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-small {
+  width: 12.5rem;
+  height: 2.5rem;
+
+  font-size: 1rem;
+
+  border-radius: 5px;
+  border: 0px solid;
+}
+
+.input-medium {
+  width: 18.5rem;
+  height: 2.5rem;
+
+  font-size: 1.1rem;
+
+  border-radius: 5px;
+  border: 0px solid;
+}
+
+.input-big {
+  width: 25rem;
+  height: 2.5rem;
+
+  font-size: 1rem;
+}
+
+.mt-small {
+  margin-top: 2rem;
+}
+
+.mt-medium {
+  margin-top: 2rem;
+}
+
+.mt-big {
+  margin-top: 2rem;
+}
+
+.mt-biggest {
+  margin-top: 4rem;
+}
+
+/* CLASSES ESPECIAS PARA OS COMPONENTES DA TELA */
+
+.login-btn {
+  cursor: pointer;
+
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+  width: 10rem;
+
+  box-shadow: 0px 10px 13px -7px #000000,
+    -22px 2px 20px -10px rgba(0, 0, 0, 0.12);
+}
+
+.login-btn:hover {
+  background: #2f99d6;
+  width: 14rem;
+
+  margin: 2px solid black;
+}
+
+.link {
+  text-decoration: none;
+  margin-top: 3rem;
+  color: rgb(31, 99, 138);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-password {
+  margin-left: 1rem;
+}
