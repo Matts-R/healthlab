@@ -13,37 +13,25 @@ class AuthenticationService {
   // TO-DO
   static async comparePassword(password) {
     bcrypt.compare(password, hash, function(err, result) {
-// result == true
-if (this.password == this.hash){
-  try{
-  return result
-  }
-  catch (error){
-    return json({ error: err.mesage });
-  }
-}
-else{
-  return json({ Mensagem: "Não foi encontrado senha para comparar" });
-}
-  });
-
+    const salt = await bcrypt.genSalt(this.rounds);
+    const hash = await bcrypt.hash(password, salt);
+      if(hash == password){
+        return result
+      }else{
+        return err.message
+      }
+    })
   bcrypt.compare(password, hash, function(err, result) {
     // result == false
-    if (this.password != this.hash){
-    try{
+     const salt = await bcrypt.genSalt(this.rounds);
+     const hash = await bcrypt.hash(password, salt);
+    if(hash != password){
       return result
-      }
-      catch (error){
-        return json({ error: err.mesage });
-      }
-    } else{
-      return json({ Mensagem: "Não foi encontrado senha para comparar" });
+    }else{
+      return err.message
     }
 });
-
-
-    // const salt = await bcrypt.genSalt(this.rounds);
-    // const hash = await bcrypt.hash(password, salt);
+ 
     // return hash;
   }
 }
