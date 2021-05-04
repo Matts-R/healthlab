@@ -12,28 +12,8 @@ class AuthenticationService {
 
   // TO-DO
   static async comparePassword(password) {
-    bcrypt.compare(password, hash, function(err, result) {
-    const salt = await bcrypt.genSalt(this.rounds);
-    const hash = await bcrypt.hash(password, salt);
-      if(hash == password){
-        return result
-      }else{
-        return err.message
-      }
-    })
-  bcrypt.compare(password, hash, function(err, result) {
-    // result == false
-     const salt = await bcrypt.genSalt(this.rounds);
-     const hash = await bcrypt.hash(password, salt);
-    if(hash != password){
-      return result
-    }else{
-      return err.message
-    }
-});
- 
-    // return hash;
+    return await bcrypt.compare(hash, password);
   }
 }
-
+console.log(this.comparePassword)
 module.exports = AuthenticationService;
