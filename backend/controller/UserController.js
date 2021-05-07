@@ -1,15 +1,21 @@
 const { sequelize } = require("../database/models");
 const User = require("../database/models/init-models")(sequelize).user;
+const { Op } = require ('sequelize')
+const { generatePassword, comparePassword} = require("../services/Authenticate");
+
+
+
 
 class UserController {
   async createUser(req, res) {
     const userData = req.body;
+    let senha = await generatePassword(userData.password)
     const transaction = await sequelize.transaction();
     try {
       const userCreated = await User.create(
         {
           login: userData.login,
-          password: userData.password,
+          password: senha,
           email: userData.email,
         },
         { transaction }
@@ -55,6 +61,7 @@ class UserController {
       const result = await User.findByPk(id);
       if (result != null) {
         const user = result.dataValues;
+        
 
         res.status(200).json({ status: true, user });
       } else {
@@ -126,6 +133,52 @@ class UserController {
         message: `Error: ${error}`,
       });
     }
+  }
+
+  async findUserByLogin(req,res){
+    let login = '%' + req.body.login + '%'
+        try{
+            const userRes = await User.findAll({
+              where: {
+                login: {
+                  [Op.like]: login
+                }
+              }
+            })
+            if (userRes)
+            res.status(200).json(userRes[0]);
+            else
+            res.status(200).json({message: "Login não encontrado!"})
+        }
+        catch(err){
+            res.status(400).json({error: err.message})
+        }
+  }
+
+  async userLogin(req,res){
+    let login = '%' + req.body.login + '%'
+    let senha = req.body.password
+        try{
+            const userRes = await User.findAll({
+              where: {
+                login: {
+                  [Op.like]: login
+                }
+              }
+            })
+            if (userRes){
+              const compare = await comparePassword(senha, userRes[0].password)
+              if(compare) res.status(200).json({message: "Login efetuado!"})
+              else res.status(200).json({message: "Acesso negado!"})
+            }
+            else{
+            res.status(200).json({message: "Login não encontrado!"})
+            }
+          }
+
+        catch(err){
+            res.status(400).json({error: err.message})
+        }
   }
 }
 
