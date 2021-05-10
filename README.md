@@ -1,6 +1,6 @@
-# Health Lab
+# Health Space
 [![NPM](https://img.shields.io/apm/l/react?style=for-the-badge)](https://github.com/Matts-R/healthlab/blob/main/LICENSE)
-## Health Lab é um projeto com fins não lucrativos com a itenção integrar tecnologia à saúde.
+## Health Space é um projeto com fins não lucrativos com a itenção integrar tecnologia à saúde.
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
