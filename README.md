@@ -1,6 +1,6 @@
 # Health Space
 [![NPM](https://img.shields.io/apm/l/react?style=for-the-badge)](https://github.com/Matts-R/healthlab/blob/main/LICENSE)
-### Health Space é um projeto com fins não lucrativos com a itenção integrar tecnologia à saúde.
+### Health Space é um projeto com fins não lucrativos com a intenção integrar tecnologia à saúde.
 
 ---
 
@@ -10,7 +10,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-Utilizando o terminal do VSCode instale o Express,Sequelize,MySql2, Body Parser (Caso Necessário) utilizando os comandos npm:
+Utilizando o terminal do VSCode instale o Express, Sequelize, MySql2, Body Parser (Caso Necessário) utilizando os comandos npm:
 
 * npm init
 * npm install sequelize express
