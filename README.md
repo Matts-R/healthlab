@@ -3,7 +3,9 @@
 ### Health Space é um projeto com fins não lucrativos com a intenção integrar tecnologia à saúde.
 
 ---
-
+<p align="center">
+	<img width="470" src="" 
+---
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
