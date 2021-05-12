@@ -12,34 +12,36 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-Utilizando o terminal do VSCode instale o Express, Sequelize, MySql2, Body Parser (Caso Necessário) utilizando os comandos npm:
+Utilizando o terminal instale o Express, Sequelize, Sequelize-auto, Sequelize-cli, MySql2, Bcrypt e o Cors seguindo o passo a passo abaixo:
 
-* npm init
-* npm install sequelize express
-* npm install -D sequelize-cli
-* npx sequelize init
-* npm install body-parser
-* npm install mysql2
-
-### 🎲 Rodando o Back End (servidor)
+### 🎲 Rodando a aplicação
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/Matts-R/healthlab>
+$ git clone <https://github.com/Matts-R/healthlab.git>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd healthlab-main
+$ cd healthlab
 
 # Vá para a pasta backend
 $ cd backend
 
-# Instale as dependências
-$ npm install
+# Instale as dependências do backend
+$ npm update
 
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
+# Execute a aplicação backend
+$ npm start
 
-# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
+# Vá para a pasta frontend
+$ cd ../frontend
+
+# Instale as dependências do frontend
+$ npm update
+
+# Execute a aplicação frontend
+$ npm start
+
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 ```
 
 ### 🛠 Tecnologias
@@ -71,6 +73,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 </table>
 
 ---
+### Protótipo
+
 Link para o protótipo do projeto no figma: https://www.figma.com/file/gF1wCL2Vzp9nnPNAN1Q8PJ/Health-lab?node-id=0%3A1
 
 <h4 align="center"> 
