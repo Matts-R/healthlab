@@ -4,7 +4,8 @@
 
 ---
 <p align="center">
-	<img width="470" src="" 
+	<img width="470" src="">
+	</p>
 ---
 ### Pré-requisitos
 
