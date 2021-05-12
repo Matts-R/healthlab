@@ -55,7 +55,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Node.js](https://nodejs.org/en/)
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://www.w3schools.com/css/)
-- 
+- [Angular](https://angular.io/start)
 
 ## Integrantes do grupo
 ---
