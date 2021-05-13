@@ -4,12 +4,16 @@ const PostTagController = require("../controller/PostTagController");
 const PostController = require("../controller/PostController");
 const TagController = require("../controller/TagController");
 
+
+
 //User rotas
 router.post("/createuser", UserController.createUser);
 router.get("/getallusers", UserController.getAllUsers);
 router.get("/getuser/:id", UserController.getuserById);
 router.put("/updateuser/:id", UserController.updateUser);
 router.delete("/deleteuser/:id", UserController.deleteUser);
+router.get("/getlogin", UserController.findUserByLogin);
+router.post("/comparepassword/:id", UserController.userLogin);
 
 //Post rotas
 router.post("/createpost", PostController.createPost);
