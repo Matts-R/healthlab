@@ -1,0 +1,19 @@
+.navbar {
+  width: 100vw;
+  height: 12vh;
+  display: grid;
+}
+
+.background-color {
+  background: rgb(216, 243, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(216, 243, 255, 1) 9%,
+    rgba(208, 247, 255, 1) 100%
+  );
+}
+
+.logo-img {
+  width: 5rem;
+  height: 5rem;
+}

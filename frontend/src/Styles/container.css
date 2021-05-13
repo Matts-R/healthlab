@@ -6,6 +6,7 @@ html {
 *,
 *::before,
 *::after {
+  margin: 0px;
   box-sizing: inherit;
 }
 
