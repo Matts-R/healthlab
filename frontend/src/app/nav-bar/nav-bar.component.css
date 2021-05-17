@@ -1,0 +1,47 @@
+.navbar {
+  height: 12vh;
+  width: 100vw;
+
+  background: rgb(207, 220, 250);
+  background: linear-gradient(
+    21deg,
+    rgba(207, 220, 250, 1) 0%,
+    rgba(197, 249, 255, 1) 52%,
+    rgba(201, 255, 255, 1) 87%
+  );
+
+  display: grid;
+  grid-template-columns: 15% auto 15%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.back-arrow {
+  height: 2rem;
+  width: 2rem;
+
+  margin-left: 1.5rem;
+
+  place-self: left;
+  align-self: center;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+
+  place-self: center;
+  align-self: center;
+}
+
+.logout {
+  height: 2rem;
+  width: 2rem;
+
+  margin-right: 1.5rem;
+
+  place-self: end;
+  align-self: center;
+}
