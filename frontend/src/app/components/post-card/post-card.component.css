@@ -1,0 +1,20 @@
+.post-card {
+  height: 25vh;
+  width: 95%;
+  margin: 2rem auto 3rem;
+
+  border-radius: 15px;
+  background: #e5e5e5;
+  box-shadow: 5px 5px 12px #bebebe, -5px -5px 12px #ffffff;
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.post-card:hover {
+  border-radius: 15px;
+  background: #e5e5e5;
+  box-shadow: 5px 5px 0px #777777, -5px -5px 0px #ffffff;
+
+  transform: translateY(-0.3rem);
+}

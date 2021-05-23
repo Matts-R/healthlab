@@ -1,0 +1,11 @@
+<div class="tags-container">
+  <mat-chip-list aria-label="Filter tags">
+    <mat-chip
+      class="chips"
+      *ngFor="let tag of tags"
+      (click)="getChipValue($event.target.outerText)"
+      [value]="tag.description"
+      >{{ tag.description }}</mat-chip
+    >
+  </mat-chip-list>
+</div>
