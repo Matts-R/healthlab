@@ -18,3 +18,28 @@
 
   cursor: pointer;
 }
+
+.see-more {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+
+  cursor: pointer;
+}
+
+.see-more:hover > .see-more-text {
+  opacity: 0.7;
+}
+
+.plus-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.see-more-text {
+  margin-left: 0.5rem;
+  font-size: 1.125rem;
+  color: #6e2fad;
+  transition: all 0.3s ease-in-out;
+}

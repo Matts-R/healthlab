@@ -66,4 +66,8 @@ export class TagsCardComponent implements OnInit {
   getChipValue(chipValue: string): void {
     console.log(chipValue);
   }
+
+  vaiFilhao(): void {
+    alert('Seu momento de brilhar David');
+  }
 }
