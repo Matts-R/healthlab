@@ -66,8 +66,21 @@ export class TagsCardComponent implements OnInit {
   getChipValue(chipValue: string): void {
     console.log(chipValue);
   }
-
+  
   vaiFilhao(): void {
-    alert('Seu momento de brilhar David');
+    let modal = document.getElementById("myModal");
+    modal.style.display = "block";
+
+   
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    //alert('Seu momento de brilhar David');
   }
+  Fechar(): void{
+    let modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
 }

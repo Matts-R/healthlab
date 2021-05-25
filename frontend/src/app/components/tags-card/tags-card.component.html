@@ -3,7 +3,6 @@
     <mat-chip
       class="chips"
       *ngFor="let tag of tags"
-      (click)="getChipValue($event.target.outerText)"
       [value]="tag.description"
       >{{ tag.description }}</mat-chip
     >
@@ -11,5 +10,30 @@
   <div class="see-more" (click)="vaiFilhao()">
     <img class="plus-icon" src="assets/plus.svg" alt="Plus icon" />
     <span class="see-more-text">Ver mais</span>
+  </div>
+</div>
+
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span (click)="Fechar()" class="close">&times;</span>
+      <h2>Mais Tags</h2>
+    </div>
+    <div class="modal-body">
+      <mat-chip-list aria-label="Filter tags">
+        <mat-chip
+          class="chips"
+          *ngFor="let tag of tags"
+          [value]="tag.description"
+          >{{ tag.description }}</mat-chip
+        >
+      </mat-chip-list>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
   </div>
 </div>
