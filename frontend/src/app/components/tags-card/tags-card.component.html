@@ -7,23 +7,21 @@
       >{{ tag.description }}</mat-chip
     >
   </mat-chip-list>
-  <div class="see-more" (click)="vaiFilhao()">
+  <div class="see-more" (click)="openModal()">
     <img class="plus-icon" src="assets/plus.svg" alt="Plus icon" />
     <span class="see-more-text">Ver mais</span>
   </div>
 </div>
 
-
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
+<!-- Modal content -->
+<div id="myModal" class="{{ modalClass }}">
   <div class="modal-content">
     <div class="modal-header">
-      <span (click)="Fechar()" class="close">&times;</span>
+      <span (click)="closeModal()" class="close">&times;</span>
       <h2>Mais Tags</h2>
     </div>
     <div class="modal-body">
-      <mat-chip-list aria-label="Filter tags">
+      <mat-chip-list aria-label="Filter tags" class="chips-div">
         <mat-chip
           class="chips"
           *ngFor="let tag of tags"
