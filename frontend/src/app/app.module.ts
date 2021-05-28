@@ -12,7 +12,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { TagsCardComponent } from './components/tags-card/tags-card.component';
 import { FavoritosComponent } from './components/favoritos/favoritos.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { SeguindoComponent } from './components/seguindo/seguindo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     PostCardComponent,
     TagsCardComponent,
     FavoritosComponent,
+    SeguindoComponent,
   ],
   imports: [
     BrowserModule,
