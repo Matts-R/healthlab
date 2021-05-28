@@ -17,6 +17,7 @@ import { SeguindoComponent } from './components/seguindo/seguindo.component';
 import { MeuperfilComponent } from './components/meuperfil/meuperfil.component';
 import { LeituraPageComponent } from './components/leitura-page/leitura-page.component';
 import { CriacaoPostComponent } from './components/criacao-post/criacao-post.component';
+import { ConfiguracaoComponent } from './components/configuracao/configuracao.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { CriacaoPostComponent } from './components/criacao-post/criacao-post.com
     SeguindoComponent,
     LeituraPageComponent,
     CriacaoPostComponent,
-
+    ConfiguracaoComponent,
   ],
   imports: [
     BrowserModule,

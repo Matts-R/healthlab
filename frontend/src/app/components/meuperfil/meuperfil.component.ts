@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-meuperfil',
@@ -10,7 +11,7 @@ export class MeuperfilComponent implements OnInit {
   public posts: Array<any> = [];
   public userName: string = '';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.posts = [
@@ -36,9 +37,14 @@ export class MeuperfilComponent implements OnInit {
       },
     ];
 
+
     this.userName = 'Matheus Henrique Ribeiro da Silva';
 
     console.log(this.posts);
+  }
+
+  redirect(){
+    this.router.navigate(['config']);
   }
 
 }

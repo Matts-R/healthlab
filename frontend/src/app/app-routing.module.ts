@@ -8,7 +8,8 @@ import { FavoritosComponent } from './components/favoritos/favoritos.component';
 import { SeguindoComponent } from './components/seguindo/seguindo.component';
 import { MeuperfilComponent } from './components/meuperfil/meuperfil.component';
 import { LeituraPageComponent } from './components/leitura-page/leitura-page.component';
-import { CriacaoPostComponent} from './components/criacao-post/criacao-post.component';
+import { CriacaoPostComponent } from './components/criacao-post/criacao-post.component';
+import { ConfiguracaoComponent } from './components/configuracao/configuracao.component';
 
 const routes: Routes = [
   { path: '', component: TelaLoginComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'seguindo', component: SeguindoComponent },
   { path: 'meuperfil', component: MeuperfilComponent },
   { path: 'ler', component: LeituraPageComponent },
-  {path: 'criacao', component: CriacaoPostComponent}
+  { path: 'criacao', component: CriacaoPostComponent},
+  { path: 'config', component: ConfiguracaoComponent},
 ];
 
 @NgModule({
