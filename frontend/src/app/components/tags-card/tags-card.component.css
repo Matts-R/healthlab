@@ -104,11 +104,7 @@
 
 /* The Close Button */
 .close {
-<<<<<<< HEAD
-  color: #6e2fad;
-=======
   color: black;
->>>>>>> c3fdb10ef249cf4a981b27489fc8b014316363a6
   float: right;
   font-size: 28px;
   font-weight: bold;
