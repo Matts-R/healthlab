@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatChipsModule } from '@angular/material/chips';
 import { TagsCardComponent } from './components/tags-card/tags-card.component';
 import { FavoritosComponent } from './components/favoritos/favoritos.component';
+import { SeguindoComponent } from './components/seguindo/seguindo.component';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { FavoritosComponent } from './components/favoritos/favoritos.component';
     PostCardComponent,
     TagsCardComponent,
     FavoritosComponent,
-
+    SeguindoComponent,
   ],
   imports: [
     BrowserModule,
