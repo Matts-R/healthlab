@@ -1,0 +1,13 @@
+<main class="home-container">
+  <div class="post-container">
+    <ng-container *ngFor="let post of posts">
+      <div class="post-card">
+        <img class="coracao clickable"  (click)="teste()" src="./assets/coracao.svg" alt="" />
+      </div>
+      
+    </ng-container>
+  </div>
+    <div class="tags">
+      <app-tags-card></app-tags-card>
+    </div>
+  </main>

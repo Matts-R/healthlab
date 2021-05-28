@@ -1,0 +1,45 @@
+.home-container {
+    width: 100%;
+    height: 90vh;
+  
+    display: grid;
+    grid-template-columns: 80% auto 0%;
+  }
+  .post-card {
+    height: 25vh;
+    width: 95%;
+    margin: 2rem auto 3rem;
+  
+    border-radius: 15px;
+    background: #e5e5e5;
+    box-shadow: 5px 5px 12px #bebebe, -5px -5px 12px #ffffff;
+  
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .post-card:hover {
+    border-radius: 15px;
+    background: #e5e5e5;
+    box-shadow: 5px 5px 0px #777777, -5px -5px 0px #ffffff;
+  
+    transform: translateY(-0.3rem);
+  }
+  .clickable {
+    cursor: pointer;
+  }
+  .coracao{
+    height: 40px;
+    position: relative;
+    left: 96.5%;
+    top: 80%;
+  }
+  .post-share {
+    text-align:center;
+    margin-top:-2px;
+    margin-bottom:20px;
+    background:transparent;
+    }
+    .post-share a {
+    display:inline-block;
+    }
