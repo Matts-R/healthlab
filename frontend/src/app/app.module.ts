@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SeguindoComponent } from './components/seguindo/seguindo.component';
 import { MeuperfilComponent } from './components/meuperfil/meuperfil.component';
 import { LeituraPageComponent } from './components/leitura-page/leitura-page.component';
+import { CriacaoPostComponent } from './components/criacao-post/criacao-post.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { LeituraPageComponent } from './components/leitura-page/leitura-page.com
     MeuperfilComponent,
     SeguindoComponent,
     LeituraPageComponent,
+    CriacaoPostComponent,
 
   ],
   imports: [

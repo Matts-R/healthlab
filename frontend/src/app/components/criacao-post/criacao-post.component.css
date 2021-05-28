@@ -1,0 +1,156 @@
+*
+#título{
+    font-family: sans-serif;
+    color: black;
+    margin-left: 40.3%;
+    margin-top: 2%;
+}
+.botão1{
+    font-size: 1.2em;
+    background: black;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.botão1:hover{
+    background: #bbbbbb;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.text1{
+    width: 20rem;
+}
+
+.text{
+    width: 26rem;
+    height: 350px;
+    margin-left: 0%;
+    display:block;
+    position: absolute;
+}
+
+.txtarea{
+    border-radius: 10px;
+    height: 30rem;
+    width: 60rem;
+    resize: none;
+    font-family: "KoHo",sans-serif;
+    font-size: 1.125rem;
+}
+
+.campo{
+    margin-bottom: 0.6em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: black;
+    text-align: center;
+}
+
+.campo1 label{
+    margin-bottom: 0.2em;
+    color: black;
+    text-align: center;
+    margin-left: 37%;
+}
+
+p{
+    margin-left: 40%;
+}
+
+.botão{
+    font-size: 1.3em;
+    background: black;
+    margin-bottom: 0em;
+    color: #ffffff;
+    padding: 0.06em 0.5em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.botão:hover{
+    background: #bbbbbb;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.send-button{
+    height: 30px;
+    top: relative;
+}
+ .anexar{
+    height: 35px;
+    top: -17%;
+    position: relative;
+} 
+.icones{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    justify-content: flex-end;
+    width: 60rem;
+}
+
+
+app-tags-card{
+    margin-left: relative;
+    margin-top: relative;
+}
+
+.home-container {
+    width: 100%;
+    height: 90vh;
+    margin-left: 70%;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+}
+
+
+
+.navbar {
+    height: 10vh;
+    width: 100vw;
+  
+    background: rgb(207, 220, 250);
+    background: linear-gradient(
+      21deg,
+      rgba(207, 220, 250, 1) 0%,
+      rgba(197, 249, 255, 1) 52%,
+      rgba(201, 255, 255, 1) 87%
+    );
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  
+  .back-arrow {
+    height: 2rem;
+    width: 2rem;
+  
+    margin-left: 1.5rem;
+  }
+  
+  .logo {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .logout {
+    height: 5rem;
+    width: 2rem;
+  
+    margin-right: 1.5rem;
+  }
+
+  
