@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-card',
@@ -8,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class UserCardComponent implements OnInit {
   public userName: string = '';
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.userName = 'Matheus Henrique Ribeiro da Silva';
   }
 
   test(): void {
-    alert('ola');
+    this.router.navigate(['meuperfil']);
   }
 }
