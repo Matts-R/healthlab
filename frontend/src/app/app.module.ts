@@ -14,6 +14,7 @@ import { TelaCadastroComponent } from './components/tela-cadastro/tela-cadastro.
 import { FavoritosComponent } from './components/favoritos/favoritos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SeguindoComponent } from './components/seguindo/seguindo.component';
+import { MeuperfilComponent } from './components/meuperfil/meuperfil.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { SeguindoComponent } from './components/seguindo/seguindo.component';
     TelaLoginComponent,
     TelaCadastroComponent,
     FavoritosComponent,
-
+    MeuperfilComponent,
     SeguindoComponent,
 
   ],

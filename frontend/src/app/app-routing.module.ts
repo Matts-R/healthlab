@@ -6,6 +6,7 @@ import { TelaLoginComponent } from './components/tela-login/tela-login.component
 import { TelaCadastroComponent } from './components/tela-cadastro/tela-cadastro.component';
 import { FavoritosComponent } from './components/favoritos/favoritos.component';
 import { SeguindoComponent } from './components/seguindo/seguindo.component';
+import { MeuperfilComponent } from './components/meuperfil/meuperfil.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'login', component: TelaLoginComponent },
   { path: 'cadastro', component: TelaCadastroComponent },
   { path: 'favoritos', component: FavoritosComponent},
-  { path: 'seguindo', component: SeguindoComponent}
+  { path: 'seguindo', component: SeguindoComponent},
+  { path: 'meuperfil', component: MeuperfilComponent}
 
 ];
 
