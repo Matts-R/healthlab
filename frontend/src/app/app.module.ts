@@ -15,9 +15,14 @@ import { TelaLoginComponent } from './components/tela-login/tela-login.component
 import { TelaCadastroComponent } from './components/tela-cadastro/tela-cadastro.component';
 =======
 import { FavoritosComponent } from './components/favoritos/favoritos.component';
+<<<<<<< HEAD
 >>>>>>> 132fe27da22e1a9a5f47259225cb9a9f4876d244
 
 
+=======
+import { HttpClientModule } from '@angular/common/http';
+import { SeguindoComponent } from './components/seguindo/seguindo.component';
+>>>>>>> c3fdb10ef249cf4a981b27489fc8b014316363a6
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,12 +36,17 @@ import { FavoritosComponent } from './components/favoritos/favoritos.component';
     TelaCadastroComponent,
 =======
     FavoritosComponent,
+<<<<<<< HEAD
 
 >>>>>>> 132fe27da22e1a9a5f47259225cb9a9f4876d244
+=======
+    SeguindoComponent,
+>>>>>>> c3fdb10ef249cf4a981b27489fc8b014316363a6
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatChipsModule,
   ],

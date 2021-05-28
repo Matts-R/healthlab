@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from 'src/app/services/http-service.service';
 
 @Component({
   selector: 'app-post-card',
@@ -8,32 +9,22 @@ import { Component, OnInit } from '@angular/core';
 export class PostCardComponent implements OnInit {
   public posts: Array<any> = [];
 
-  constructor() {}
+  constructor(private httpService: HttpService) {}
 
   ngOnInit(): void {
-    this.posts = [
-      {
-        name: 'Bla',
-        quando: 'bli',
-        por: 'kk',
-      },
-      {
-        name: 'Bla',
-        quando: 'bli',
-        por: 'kk',
-      },
-      {
-        name: 'Bla',
-        quando: 'bli',
-        por: 'kk',
-      },
-      {
-        name: 'Bla',
-        quando: 'bli',
-        por: 'kk',
-      },
-    ];
+    this.httpService.getResults('getallposts').subscribe((data) => {
+      console.log(data);
 
-    console.log(this.posts);
+      // data.posts.forEach((post): any => {
+      //   post.create_at = this.formatDate(post.created_at);
+      //   this.posts.push(post);
+      // });
+    });
+  }
+
+  private formatDate(date: string): string {
+    let dateArr = date.substr(0, 10).split('-');
+    let dateFormatted = `${dateArr[2]}/${dateArr[1]}/${dateArr[0]}`;
+    return dateFormatted;
   }
 }

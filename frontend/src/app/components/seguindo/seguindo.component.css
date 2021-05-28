@@ -1,0 +1,69 @@
+.post-card {
+    height: 25vh;
+    width: 95%;
+    margin: 2rem auto 3rem;
+    display: flex;
+    align-items: center;
+  
+    border-radius: 15px;
+    background: rgb(207, 220, 250);
+    background: linear-gradient(
+      21deg,
+      rgba(207, 220, 250, 1) 0%,
+      rgba(197, 249, 255, 1) 52%,
+      rgba(201, 255, 255, 1) 87%
+    );
+    box-shadow: 5px 5px 12px #bebebe, -5px -5px 12px #ffffff;
+  
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+ 
+.post-card:hover {
+    border-radius: 15px;
+    background: rgb(207, 220, 250);
+    background: linear-gradient(
+      21deg,
+      rgba(207, 220, 250, 1) 0%,
+      rgba(197, 249, 255, 1) 52%,
+      rgba(201, 255, 255, 1) 87%
+    );
+    box-shadow: 5px 5px 0px #777777, -5px -5px 0px #ffffff;
+
+    transform: translateY(-0.3rem);
+}
+
+.follow-info {
+    position: relative;
+    display: flex;
+    left: 7%;
+    margin-right: 15%;
+}
+
+.user-image {
+    width: 15%;
+    padding: 20px;
+}
+
+.follow-text {
+    color: #6E2FAD;
+    font-size: 72px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.follow-button {
+    position: relative;
+    width: 330px;
+    height: 88px;
+
+    font-size: 36px;
+    color: #FFFFFF;
+
+    background: #6E2FAD;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+} 

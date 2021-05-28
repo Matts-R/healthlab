@@ -1,5 +1,7 @@
 const { sequelize } = require("../database/models");
+const { Op } = require("sequelize");
 const Post = require("../database/models/init-models")(sequelize).post;
+const User = require("../database/models/init-models")(sequelize).user;
 
 const PostTagController = require("./PostTagController");
 
@@ -64,7 +66,7 @@ class PostController {
 
       res.status(200).json({
         status: true,
-        posts: posts,
+        tes: posts,
       });
     } catch (error) {
       res.status(404).json({
@@ -73,6 +75,23 @@ class PostController {
       });
     }
   }
+
+  // async test(posts) {
+  //   let result = [];
+  //   await posts.forEach(async (post) => {
+  //     let userPost = await User.findAll({
+  //       where: { user_id: post.user_id },
+  //     });
+
+  //     let obj = {
+  //       postX: post,
+  //       userX: userPost[0],
+  //     };
+
+  //     result.push(obj);
+  //   });
+  //   return result;
+  // }
 
   async getById(req, res) {
     const postId = req.params.id;

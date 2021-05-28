@@ -1,10 +1,12 @@
 <div class="tags-container">
-  <mat-chip-list aria-label="Filter tags">
+  <mat-chip-list aria-label="Filter tags" selectable multiple>
     <mat-chip
+      #c="matChip"
+      (click)="selectChip(c)"
       class="chips"
       *ngFor="let tag of tags"
-      [value]="tag.description"
-      >{{ tag.description }}</mat-chip
+      [value]="tag"
+      >{{ tag.name }}</mat-chip
     >
   </mat-chip-list>
   <div class="see-more" (click)="openModal()">
@@ -21,17 +23,22 @@
       <h2>Mais Tags</h2>
     </div>
     <div class="modal-body">
-      <mat-chip-list aria-label="Filter tags" class="chips-div">
+      <mat-chip-list
+        aria-label="Filter tags"
+        class="chips-div"
+        selectable
+        multiple
+      >
         <mat-chip
+          #c="matChip"
+          (click)="selectChip(c)"
           class="chips"
-          *ngFor="let tag of tags"
-          [value]="tag.description"
-          >{{ tag.description }}</mat-chip
+          *ngFor="let tag of allTags"
+          [value]="tag.name"
+          >{{ tag.name }}</mat-chip
         >
       </mat-chip-list>
     </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
-    </div>
+    <div class="modal-footer"></div>
   </div>
 </div>
