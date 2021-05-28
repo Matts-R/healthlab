@@ -15,6 +15,7 @@ import { FavoritosComponent } from './components/favoritos/favoritos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SeguindoComponent } from './components/seguindo/seguindo.component';
 import { MeuperfilComponent } from './components/meuperfil/meuperfil.component';
+import { LeituraPageComponent } from './components/leitura-page/leitura-page.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MeuperfilComponent } from './components/meuperfil/meuperfil.component';
     FavoritosComponent,
     MeuperfilComponent,
     SeguindoComponent,
+    LeituraPageComponent,
 
   ],
   imports: [

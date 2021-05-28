@@ -1,31 +1,31 @@
+<app-nav-bar></app-nav-bar>
+
 <main class="meuperfil-container">
-    <div class="user-card">
-        <img src="assets/user.svg" alt="" class="user-image" />
-        <p class="user-name">{{ userName }}</p>
-        <img src="assets/engrenagem.svg" alt="" class="user-config"/>
-        <div class="user-info-title">
-            <label>Informações</label> 
-         </div>
-        <div class="user-info">
-            <textarea name="informacoes" maxlength="50"></textarea>
-        </div>
-        <div class="user-bio-title">
-           <label>Biografia</label> 
-        </div>
-        <div class="user-bio">
-            
-            <textarea name="biografia" maxlength="250"></textarea>
-        </div>
+  <div class="user-card">
+    <img src="assets/user.svg" alt="" class="user-image" />
+    <p class="user-name">{{ userName }}</p>
+    <img src="assets/engrenagem.svg" alt="" class="user-config" />
+    <div class="user-info-title">
+      <label>Informações</label>
     </div>
-
-    <div class="post-container">
-        <ng-container *ngFor="let post of posts">
-            <div class="post-card"></div>
-        </ng-container>
+    <div class="user-info">
+      <textarea name="informacoes" maxlength="50"></textarea>
     </div>
+    <div class="user-bio-title">
+      <label>Biografia</label>
+    </div>
+    <div class="user-bio">
+      <textarea name="biografia" maxlength="250"></textarea>
+    </div>
+  </div>
 
-    <div class="tags">
-        <app-tags-card></app-tags-card>
-      </div>
+  <div class="post-container">
+    <ng-container *ngFor="let post of posts">
+      <div class="post-card"></div>
+    </ng-container>
+  </div>
+
+  <div class="tags">
+    <app-tags-card></app-tags-card>
+  </div>
 </main>
-

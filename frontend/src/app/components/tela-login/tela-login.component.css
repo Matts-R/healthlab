@@ -1,5 +1,5 @@
-.pagina{
-    background: linear-gradient(
+.pagina {
+  background: linear-gradient(
     to right,
     rgba(207, 220, 250, 1) 0%,
     rgba(197, 249, 255, 1) 52%,
@@ -7,14 +7,18 @@
   );
 }
 
-.logo-clickable{
+#login {
+  margin-right: 6rem;
+}
+
+.logo-clickable {
   display: block;
   position: absolute;
   width: 650px;
   height: 650px;
 }
 
-.campos{
+.campos {
   display: block;
   padding: 20px 100px 20px 20px;
   margin: 10px;
@@ -22,27 +26,29 @@
   left: 1100px;
   top: 280px;
   border: 1px solid #000000;
-	border-radius: 10px;
+  border-radius: 10px;
 }
 
-#botao{
+#botao {
   display: block;
   padding: 20px 100px 20px 20px;
   margin-top: 15px;
   position: relative;
   left: 1170px;
   top: 280px;
+  cursor: pointer;
   border: 1px solid #000000;
-	border-radius: 10px;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 20px;
   color: white;
   background-color: purple;
 }
 
-#botaoCadastro{
+#botaoCadastro {
   display: inline-block;
   padding: 20px 100px 20px 20px;
+  cursor: pointer;
   margin-top: 15px;
   position: relative;
   left: 1125px;
@@ -50,4 +56,3 @@
   font-size: 15px;
   color: purple;
 }
-

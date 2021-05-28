@@ -15,18 +15,7 @@ export class TagsCardComponent implements OnInit {
 
   constructor(private httpService: HttpService) {}
 
-  ngOnInit(): void {
-    this.httpService.getResults('getalltags').subscribe((data) => {
-      if (data.status) {
-        if (data.result.length > 10) {
-          this.tags = data.result.slice(0, 10);
-          this.allTags = data.result;
-        } else {
-          this.tags = data.result;
-        }
-      }
-    });
-  }
+  ngOnInit(): void {}
 
   selectChip(chip: MatChip): void {
     chip.toggleSelected();

@@ -7,17 +7,16 @@ import { TelaCadastroComponent } from './components/tela-cadastro/tela-cadastro.
 import { FavoritosComponent } from './components/favoritos/favoritos.component';
 import { SeguindoComponent } from './components/seguindo/seguindo.component';
 import { MeuperfilComponent } from './components/meuperfil/meuperfil.component';
-
+import { LeituraPageComponent } from './components/leitura-page/leitura-page.component';
 
 const routes: Routes = [
-  { path: '', component: NavBarComponent },
+  { path: '', component: TelaLoginComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'login', component: TelaLoginComponent },
   { path: 'cadastro', component: TelaCadastroComponent },
-  { path: 'favoritos', component: FavoritosComponent},
-  { path: 'seguindo', component: SeguindoComponent},
-  { path: 'meuperfil', component: MeuperfilComponent}
-
+  { path: 'favoritos', component: FavoritosComponent },
+  { path: 'seguindo', component: SeguindoComponent },
+  { path: 'meuperfil', component: MeuperfilComponent },
+  { path: 'ler', component: LeituraPageComponent },
 ];
 
 @NgModule({

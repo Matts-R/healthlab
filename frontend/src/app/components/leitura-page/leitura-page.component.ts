@@ -1,18 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { HttpService } from 'src/app/services/http-service.service';
 
 @Component({
-  selector: 'app-post-card',
-  templateUrl: './post-card.component.html',
-  styleUrls: ['./post-card.component.css'],
+  selector: 'app-leitura-page',
+  templateUrl: './leitura-page.component.html',
+  styleUrls: ['./leitura-page.component.css'],
 })
-export class PostCardComponent implements OnInit {
-  public posts: Array<any> = [
-    {
-      id: 2,
-      titulo: 'Os efeitos da quarentena na saúde mental',
-      texto: `A saúde mental em tempos de pandemia é uma preocupação constante. Foram documentados em todo o mundo aumento de ansiedade, depressão, estresse e até pensamento suicida associados à quarentena por Covid-19.
+export class LeituraPageComponent implements OnInit {
+  public posts = {
+    id: 2,
+    titulo: 'Os efeitos da quarentena na saúde mental',
+    texto: `A saúde mental em tempos de pandemia é uma preocupação constante. Foram documentados em todo o mundo aumento de ansiedade, depressão, estresse e até pensamento suicida associados à quarentena por Covid-19.
 
       Um artigo publicado recentemente no JAMA propôs estudar os fatores de risco para esses efeitos psicológicos, avaliando estudantes universitários na França confinados à quarentena.
 A saúde mental em tempos de pandemia é uma preocupação constante. Foram documentados em todo o mundo aumento de ansiedade, depressão, estresse e até pensamento suicida associados à quarentena por Covid-19.
@@ -27,21 +24,9 @@ Dentre estas, podemos ressaltar, com base no estudo, estimular atividades físic
 
 
 `,
-      criado_em: '15/05/2021',
-    },
-  ];
-
-  constructor(private httpService: HttpService, private router: Router) {}
+    criado_em: '15/05/2021',
+  };
+  constructor() {}
 
   ngOnInit(): void {}
-
-  private formatDate(date: string): string {
-    let dateArr = date.substr(0, 10).split('-');
-    let dateFormatted = `${dateArr[2]}/${dateArr[1]}/${dateArr[0]}`;
-    return dateFormatted;
-  }
-
-  redirectToRead() {
-    this.router.navigate(['ler']);
-  }
 }
