@@ -1,0 +1,42 @@
+.pagina{
+    background: linear-gradient(
+    to right,
+    rgba(207, 220, 250, 1) 0%,
+    rgba(197, 249, 255, 1) 52%,
+    rgba(201, 255, 255, 1) 87%
+  );
+}
+
+.logo-clickable{
+  display: block;
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  padding-left: 20px;
+}
+
+.campos{
+  display: block;
+  padding: 20px 150px 20px 20px;
+  margin: 15px;
+  position: relative;
+  left: 1100px;
+  top: 165px;
+  border: 1px solid #000000;
+	border-radius: 10px;
+}
+
+#botao{
+  display: block;
+  padding: 20px 150px 20px 20px;
+  margin-top: 15px;
+  position: relative;
+  left: 1110px;
+  top: 200px;
+  border: 1px solid #000000;
+    border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background-color: purple;
+}

@@ -10,6 +10,9 @@ import { PostCardComponent } from './components/post-card/post-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatChipsModule } from '@angular/material/chips';
 import { TagsCardComponent } from './components/tags-card/tags-card.component';
+import { TelaLoginComponent } from './components/tela-login/tela-login.component';
+import { TelaCadastroComponent } from './components/tela-cadastro/tela-cadastro.component';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +22,8 @@ import { TagsCardComponent } from './components/tags-card/tags-card.component';
     UserCardComponent,
     PostCardComponent,
     TagsCardComponent,
+    TelaLoginComponent,
+    TelaCadastroComponent,
   ],
   imports: [
     BrowserModule,
