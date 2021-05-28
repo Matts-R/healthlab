@@ -1,5 +1,7 @@
 <div class="post-container">
   <ng-container *ngFor="let post of posts">
-    <div class="post-card"></div>
+    <div class="post-card">
+      <h3>{{ post.body_text }}</h3>
+    </div>
   </ng-container>
 </div>

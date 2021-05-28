@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatChip } from '@angular/material/chips';
+import { HttpService } from 'src/app/services/http-service.service';
 
 @Component({
   selector: 'app-tags-card',
@@ -7,65 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TagsCardComponent implements OnInit {
   public tags: Array<any> = [];
+  public allTags: Array<any> = [];
+
   public modalClass: string = 'modal-hidden';
 
-  constructor() {}
+  constructor(private httpService: HttpService) {}
 
   ngOnInit(): void {
-    this.tags = [
-      {
-        description: 'Testing',
-      },
-      {
-        description: 'test',
-      },
-      {
-        description: 'aahhh',
-      },
-      {
-        description: 'bla',
-      },
-      {
-        description: 'ble',
-      },
-      {
-        description: 'bli',
-      },
-      {
-        description: 'blo',
-      },
-      {
-        description: 'blu',
-      },
-      {
-        description: 'Chips',
-      },
-      {
-        description: 'Are',
-      },
-      {
-        description: 'Cool',
-      },
-      {
-        description: 'Hello',
-      },
-      {
-        description: 'Guys',
-      },
-      {
-        description: 'Pipipi',
-      },
-      {
-        description: 'Popopo',
-      },
-      {
-        description: 'Cardiologia',
-      },
-    ];
+    this.httpService.getResults('getalltags').subscribe((data) => {
+      if (data.status) {
+        if (data.result.length > 10) {
+          this.tags = data.result.slice(0, 10);
+          this.allTags = data.result;
+        } else {
+          this.tags = data.result;
+        }
+      }
+    });
   }
 
-  getChipValue(chipValue: string): void {
-    console.log(chipValue);
+  selectChip(chip: MatChip): void {
+    chip.toggleSelected();
   }
 
   openModal(): void {
