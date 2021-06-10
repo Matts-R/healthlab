@@ -58,6 +58,7 @@
     position: relative;
     width: 330px;
     height: 88px;
+    cursor: pointer;
 
     font-size: 36px;
     color: #FFFFFF;
@@ -66,4 +67,18 @@
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 20px;
-} 
+    box-shadow: 2px 2px 0 1px #000000;
+
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    
+}
+
+.follow-button:hover {
+    transform: translateY(-0.3rem);
+
+}
+
+.follow-button:active {
+    box-shadow: 0 0 0 0 #6E2FAD, inset 3px 3px 3px #6E2FAD;
+    transform: translate(1px, 1px);
+}
