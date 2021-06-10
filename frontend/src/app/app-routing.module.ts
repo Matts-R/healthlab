@@ -12,7 +12,7 @@ import { CriacaoPostComponent } from './components/criacao-post/criacao-post.com
 import { ConfiguracaoComponent } from './components/configuracao/configuracao.component';
 
 const routes: Routes = [
-  { path: '', component: TelaLoginComponent },
+  { path: 'tela-login', component: TelaLoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'cadastro', component: TelaCadastroComponent },
   { path: 'favoritos', component: FavoritosComponent },

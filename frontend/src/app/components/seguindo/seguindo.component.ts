@@ -31,10 +31,9 @@ export class SeguindoComponent implements OnInit {
         quando: 'bli',
         por: 'kk',
       },
-    ];
+    ]; 
+  }
+}
 
-    console.log(this.posts);
-  }
-  }
 
 
