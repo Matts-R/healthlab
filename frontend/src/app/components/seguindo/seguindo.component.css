@@ -41,17 +41,18 @@
 }
 
 .user-image {
-    width: 15%;
+    width: 180px;
+    height: 180px;
     padding: 20px;
 }
 
 .follow-text {
     color: #6E2FAD;
-    font-size: 72px;
+    font-size: 40px;
     display: flex;
     align-items: center;
     position: relative;
-    width: 100%;
+    width: 350px;
 }
 
 .follow-button {
@@ -59,6 +60,7 @@
     width: 330px;
     height: 88px;
     cursor: pointer;
+    left: 20%;
 
     font-size: 36px;
     color: #FFFFFF;

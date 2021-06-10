@@ -4,8 +4,8 @@
   <ng-container *ngFor="let post of posts">
     <div class="post-card">
       <div class="follow-info">
-        <img src="assets/user.svg" alt="" class="user-image" />
-        <div class="follow-text">User</div>
+        <img src={{post.imagem}} alt="" class="user-image" />
+        <div id="user" class="follow-text">{{post.name}}</div>
       </div>
       <button class="follow-button">Deixar de seguir</button>
     </div>
