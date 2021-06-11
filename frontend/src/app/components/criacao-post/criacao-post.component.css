@@ -1,35 +1,9 @@
 *
-#título{
-    font-family: sans-serif;
-    color: black;
-    margin-left: 40.3%;
-    margin-top: 2%;
-}
-.botão1{
-    font-size: 1.2em;
-    background: black;
-    margin-bottom: 1em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-}
-
-.botão1:hover{
-    background: #bbbbbb;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
-}
-
-.text1{
-    width: 20rem;
-}
-
-.text{
-    width: 26rem;
-    height: 350px;
-    margin-left: 0%;
-    display:block;
-    position: absolute;
+h1{
+  font-family: cursive;
+  margin-left: 40%;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .txtarea{
@@ -37,70 +11,35 @@
     height: 30rem;
     width: 60rem;
     resize: none;
-    font-family: "KoHo",sans-serif;
-    font-size: 1.125rem;
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.5rem;
 }
-
+.txtarea1{
+  border-radius: 10px;
+  height: 2.5rem;
+  width: 40rem;
+  resize: none;
+  font-family: 'KoHo', sans-serif;
+  font-size: 1.800rem;
+}
 .campo{
-    margin-bottom: 0.6em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  margin-left: 13%;
+  font-family: cursive;
+  margin-top: 2px;
+  margin-bottom: 1em;
+  display: center;
+  align-items: baseline;
+  flex-direction: column;
+  font-size: 1.5rem;
 }
 
-.campo label{
-    margin-bottom: 0.2em;
-    color: black;
-    text-align: center;
-}
-
-.campo1 label{
-    margin-bottom: 0.2em;
-    color: black;
-    text-align: center;
-    margin-left: 37%;
-}
-
-p{
-    margin-left: 40%;
-}
-
-.botão{
-    font-size: 1.3em;
-    background: black;
-    margin-bottom: 0em;
-    color: #ffffff;
-    padding: 0.06em 0.5em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-}
-
-.botão:hover{
-    background: #bbbbbb;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
-}
-
-.send-button{
-    height: 30px;
-    top: relative;
-}
- .anexar{
-    height: 35px;
-    top: -17%;
-    position: relative;
-} 
-.icones{
+.icones:focus {
     display: flex;
     flex-direction: row;
-    margin-top: 0.5rem;
+    margin-top: -1rem;
     justify-content: flex-end;
     width: 60rem;
-}
-
-
-app-tags-card{
-    margin-left: relative;
-    margin-top: relative;
+    border-radius: 100px;    
 }
 
 .home-container {
@@ -153,4 +92,3 @@ app-tags-card{
     margin-right: 1.5rem;
   }
 
-  
