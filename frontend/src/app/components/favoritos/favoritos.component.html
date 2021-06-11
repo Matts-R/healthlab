@@ -3,16 +3,19 @@
 <main class="home-container">
   <div class="post-container">
     <ng-container *ngFor="let post of posts">
-      <div class="post-card">
-        <img
-          class="coracao clickable"
-          (click)="teste()"
-          src="./assets/coracao.svg"
-          alt=""
-        />
+      <div class="post-card" (click)="redirectToRead(post)">
+        <h1 class="titulo">{{ post.titulo }}</h1>
       </div>
+      <img
+      class="coracao clickable"
+        (click)="teste()"
+        src="./assets/coracao.svg"
+        alt=""
+      />
     </ng-container>
   </div>
+  
+
   <div class="tags">
     <app-tags-card></app-tags-card>
   </div>
