@@ -1,6 +1,6 @@
 <div class="post-container">
   <ng-container *ngFor="let post of posts">
-    <div class="post-card" (click)="redirectToRead()">
+    <div class="post-card" (click)="redirectToRead(post)">
       <h1 class="titulo">{{ post.titulo }}</h1>
     </div>
   </ng-container>

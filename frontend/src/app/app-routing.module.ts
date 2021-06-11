@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'favoritos', component: FavoritosComponent },
   { path: 'seguindo', component: SeguindoComponent },
   { path: 'meuperfil', component: MeuperfilComponent },
-  { path: 'ler', component: LeituraPageComponent },
+  { path: 'ler/:id', component: LeituraPageComponent },
   { path: 'criacao', component: CriacaoPostComponent},
   { path: 'config', component: ConfiguracaoComponent},
 ];

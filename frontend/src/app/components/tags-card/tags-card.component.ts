@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+  import { Component, OnInit } from '@angular/core';
 import { MatChip } from '@angular/material/chips';
 import { HttpService } from 'src/app/services/http-service.service';
 
@@ -15,7 +15,39 @@ export class TagsCardComponent implements OnInit {
 
   constructor(private httpService: HttpService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.tags = [
+      {
+        name: 'Nutrição',
+      },
+      {
+        name: 'Atividade física',
+      },
+      {
+        name: 'Saúde emocional',
+      },
+      {
+        name: 'Trabalho saudável',
+      },
+      {
+        name: 'Prevenção de doenças',
+      },
+      {
+        name: 'Psiquiatria',
+      },
+      {
+        name: 'Medicina alternativa',
+      },
+      {
+        name: 'Fisioterapia',
+      },
+      {
+        name: 'psicologia',
+      },
+
+    ]
+    this.allTags = this.tags
+  }
 
   selectChip(chip: MatChip): void {
     chip.toggleSelected();
