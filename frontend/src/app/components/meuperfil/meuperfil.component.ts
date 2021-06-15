@@ -46,7 +46,9 @@ export class MeuperfilComponent implements OnInit {
   redirect(){
     this.router.navigate(['config']);
   }
-
+  redirect2(){
+    this.router.navigate(['favoritos']);
+  }
 }
 
 

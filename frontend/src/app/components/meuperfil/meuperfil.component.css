@@ -38,6 +38,15 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
+
+  .user-fav{
+    height: 2vh;
+    width: 10%;
+    border-radius: 10%;
+    margin: 2rem auto;
+    margin-top: -20%;
+    margin-right: 80%;
+  }
   
   .user-config{
     height: 2vh;
@@ -78,10 +87,16 @@
     height: 22px;
     margin-left: -25.5%;
     margin-top: 5%;
-
+    resize: none;
     font-size: 1.2rem;
     text-align: center;
     font-family: "KoHo", sans-serif;
+  }
+  .informacoes{
+    resize: none;
+    border: none;
+    background: none;
+    text-align: center;
   }
 
   .user-bio-title{
@@ -100,10 +115,15 @@
     height: 350px;
     margin-left: -25.5%;
     margin-top: -40%;
-
     font-size: 1.2rem;
     text-align: center;
     font-family: "KoHo", sans-serif;
+  }
+  .biografia{
+    resize: none;
+    border: none;
+    background: none;
+    text-align: center;
   }
   
 .post-card {

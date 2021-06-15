@@ -7,23 +7,23 @@
             <label>Informações</label> 
          </div>
         <div class="user-info">
-            <textarea name="informacoes" maxlength="50"></textarea>
+            <textarea class="informacoes" maxlength="50">matenrique@gmail.com</textarea>
         </div>
         <div class="user-bio-title">
            <label>Biografia</label> 
         </div>
         <div class="user-bio"> 
-            <textarea name="biografia" maxlength="250"></textarea>
+            <textarea class="biografia" maxlength="250">Cursando Ciencias da Computação na UNI-BH</textarea>
         </div>
     </div>
 
     <div class="botao-apagar-perfil">
-        <button id="botao">Apagar meu perfil</button>
+        <button id="botao" (click)='telalogin()'>Apagar meu perfil</button>
 
-        <button id="botao">Sair do perfil</button>
+        <button id="botao" (click)='telalogin()'>Sair do perfil</button>
 
-        <button id="botao">Salvar Alterações</button>
+        <button id="botao" (click)='meuperfil()'>Salvar Alterações</button>
 
-        <button id="botao">Cancelar Alterações</button>
+        <button id="botao" (click)='meuperfil()'>Cancelar Alterações</button>
     </div>
 </main>

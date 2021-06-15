@@ -2,28 +2,30 @@
 
 <main class="meuperfil-container">
   <div class="user-card">
-    <img src="assets/user.svg" alt="" class="user-image" />
+    <img src="assets/fotoDoPerfil.png" alt="" class="user-image" />
     <p class="user-name">{{ userName }}</p>
     <img src="assets/engrenagem.svg" alt="" class="user-config" (click)='redirect()'/>
+    <img src="assets/coracao.svg" alt="" class="user-fav" (click)='redirect2()'/>
     <div class="user-info-title">
       <label>Informações</label>
     </div>
     <div class="user-info">
-      <textarea name="informacoes" maxlength="50"></textarea>
+      <textarea class="informacoes" maxlength="50" readonly>matenrique@gmail.com</textarea>
     </div>
     <div class="user-bio-title">
       <label>Biografia</label>
     </div>
     <div class="user-bio">
-      <textarea name="biografia" maxlength="250"></textarea>
+      <textarea class="biografia" maxlength="250" readonly>Cursando Ciencias da Computação na UNI-BH</textarea>
     </div>
   </div>
 
-  <div class="post-container">
+  <!-- <div class="post-container">
     <ng-container *ngFor="let post of posts">
       <div class="post-card"></div>
     </ng-container>
-  </div>
+  </div> -->
+  <app-post-card></app-post-card>
 
   <div class="tags">
     <app-tags-card></app-tags-card>
