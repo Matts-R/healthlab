@@ -1,5 +1,5 @@
 .post-card {
-  height: 30vh;
+  height: 20vh;
   width: 95%;
   margin: 2rem auto 3rem;
   display: flex;
@@ -21,7 +21,7 @@
 }
 
 .titulo {
-  margin-top: 1rem;
+  margin: 1rem 1rem 0rem 1rem;
   font-family: "KoHo", sans-serif;
-  
+  text-align: center;
 }

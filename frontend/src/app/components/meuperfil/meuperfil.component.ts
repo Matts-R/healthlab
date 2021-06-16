@@ -4,14 +4,13 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-meuperfil',
   templateUrl: './meuperfil.component.html',
-  styleUrls: ['./meuperfil.component.css']
+  styleUrls: ['./meuperfil.component.css'],
 })
 export class MeuperfilComponent implements OnInit {
-
   public posts: Array<any> = [];
   public userName: string = '';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.posts = [
@@ -37,18 +36,16 @@ export class MeuperfilComponent implements OnInit {
       },
     ];
 
-
     this.userName = 'Matheus Henrique Ribeiro da Silva';
-
-    console.log(this.posts);
   }
 
-  redirect(){
+  redirect() {
     this.router.navigate(['config']);
   }
-  redirect2(){
+  redirectToFavoritos() {
     this.router.navigate(['favoritos']);
   }
+  redirectToCreate() {
+    this.router.navigate(['criacao']);
+  }
 }
-
-

@@ -12,15 +12,15 @@ import { CriacaoPostComponent } from './components/criacao-post/criacao-post.com
 import { ConfiguracaoComponent } from './components/configuracao/configuracao.component';
 
 const routes: Routes = [
-  { path: 'tela-login', component: TelaLoginComponent },
+  { path: '', component: TelaLoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'cadastro', component: TelaCadastroComponent },
   { path: 'favoritos', component: FavoritosComponent },
   { path: 'seguindo', component: SeguindoComponent },
   { path: 'meuperfil', component: MeuperfilComponent },
   { path: 'ler/:id', component: LeituraPageComponent },
-  { path: 'criacao', component: CriacaoPostComponent},
-  { path: 'config', component: ConfiguracaoComponent},
+  { path: 'criacao', component: CriacaoPostComponent },
+  { path: 'config', component: ConfiguracaoComponent },
 ];
 
 @NgModule({
