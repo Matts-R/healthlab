@@ -48,4 +48,7 @@ export class MeuperfilComponent implements OnInit {
   redirectToCreate() {
     this.router.navigate(['criacao']);
   }
+  redirectToSeguindo(){
+    this.router.navigate(['seguindo'])
+  }
 }

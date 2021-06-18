@@ -40,16 +40,16 @@
 }
 
 .user-fav {
-  height: 2vh;
-  width: 10%;
+  height: 4vh;
+  width: 30%;
   border-radius: 10%;
   margin: 2rem auto;
-  margin-top: -20%;
-  margin-right: 80%;
+  margin-top: -22%;
+  margin-right: 100%;
 }
 
 .user-config {
-  height: 2vh;
+  height: 4vh;
   width: 10%;
   border-radius: 10%;
   margin: 2rem auto;
@@ -74,7 +74,7 @@
 .user-info-title {
   width: 22rem;
   height: 22px;
-  margin-left: -25.5%;
+  margin-left: -11.5%;
   margin-top: 80%;
 
   font-size: 1.2rem;
@@ -85,7 +85,7 @@
 .user-info {
   width: 22rem;
   height: 22px;
-  margin-left: -25.5%;
+  margin-left: -11.5%;
   margin-top: 5%;
   resize: none;
   font-size: 1.2rem;
@@ -102,7 +102,7 @@
 .user-bio-title {
   width: 22rem;
   height: 350px;
-  margin-left: -25.5%;
+  margin-left: -12.5%;
   margin-top: 20%;
 
   font-size: 1.2rem;
@@ -113,8 +113,8 @@
 .user-bio {
   width: 22rem;
   height: 350px;
-  margin-left: -25.5%;
-  margin-top: -40%;
+  margin-left: -12.5%;
+  margin-top: -30%;
   font-size: 1.2rem;
   text-align: center;
   font-family: "KoHo", sans-serif;
@@ -125,7 +125,6 @@
   background: none;
   text-align: center;
 }
-
 .post-card {
   height: 25vh;
   width: 95%;
@@ -170,4 +169,9 @@
   font-size: 1.5rem;
   color: #6e2fad;
   transition: all 0.3s ease-in-out;
+}
+.seguindo{
+  color: #6e2fad;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
 }

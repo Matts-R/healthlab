@@ -57,7 +57,7 @@
     .user-info-title{
       width: 22rem;
       height: 22px;
-      margin-left: -25.5%;
+      margin-left: -11.5%;
   
       font-size: 1.2rem;
       text-align: center;
@@ -67,7 +67,7 @@
     .user-info{
       width: 22rem;
       height: 22px;
-      margin-left: -25.5%;
+      margin-left: -11.5%;
       margin-top: 5%;
   
       font-size: 1.2rem;
@@ -84,7 +84,7 @@
     .user-bio-title{
       width: 22rem;
       height: 350px;
-      margin-left: -25.5%;
+      margin-left: -11.5%;
       margin-top: 15%;
   
       font-size: 1.2rem;
@@ -95,9 +95,8 @@
     .user-bio{
       width: 22rem;
       height: 350px;
-      margin-left: -25.5%;
-      margin-top: -25%;
-  
+      margin-left: -11.5%;
+      margin-top: -50%;
       font-size: 1.2rem;
       text-align: center;
       font-family: "KoHo", sans-serif;
@@ -123,4 +122,5 @@
         font-size: 15px;
         color: black;
         background-color: rgba(134, 231, 255, 0.4);
+        cursor: pointer;
       }

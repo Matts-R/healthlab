@@ -12,16 +12,16 @@ export class SeguindoComponent implements OnInit {
   ngOnInit(): void {
     this.posts = [
       {
-        name: 'Victor Nunes',
-        imagem: 'assets/profile_1.png',
+        name: 'Gabriel Monteiro',
+        imagem: 'assets/Cara.png',
       },
       {
-        name: 'Gabi Suemy',
+        name: 'Marcela Muniz',
         imagem: 'assets/profile_3.png',
       },
       {
-        name: 'Junio Frois',
-        imagem: 'assets/profile_2.png',
+        name: 'Julia Gomes',
+        imagem: 'assets/Mina.png',
       },
     ]; 
     console.log(this.posts);

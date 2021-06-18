@@ -17,7 +17,7 @@ export class ConfiguracaoComponent implements OnInit {
     this.userName = 'Matheus Henrique Ribeiro da Silva';
   }
   telalogin(){
-    this.router.navigate(['tela-login']);
+    this.router.navigate(['']);
   }
   meuperfil(){
     this.router.navigate(['meuperfil']);

@@ -15,7 +15,7 @@
       alt=""
       class="user-fav"
       (click)="redirectToFavoritos()"
-    />
+    /><br>
     <div class="user-info-title">
       <label>Informações</label>
     </div>
@@ -28,9 +28,11 @@ matenrique@gmail.com</textarea
       <label>Biografia</label>
     </div>
     <div class="user-bio">
-      <textarea class="biografia" maxlength="250" readonly>
-Cursando Ciencias da Computação na UNI-BH</textarea
+      <textarea class="biografia" maxlength="250" readonly>Cursando Ciencias da Computação na UNI-BH</textarea
       >
+    </div>
+    <div class="Seguindo" (click)="redirectToSeguindo()">
+      <span class="seguindo">Seguindo</span>
     </div>
   </div>
   <app-post-card></app-post-card>
