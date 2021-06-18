@@ -75,11 +75,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ---
 ### Protótipo
 
-Link para o protótipo do projeto no figma: https://www.figma.com/file/gF1wCL2Vzp9nnPNAN1Q8PJ/Health-lab?node-id=0%3A1
+* Link para o protótipo do projeto no figma: https://www.figma.com/file/gF1wCL2Vzp9nnPNAN1Q8PJ/Health-lab?node-id=0%3A1
 ---
 ### Vídeo explicativo
 
-Link para o vídeo: https://drive.google.com/drive/folders/1co3KrYqTRvGP4W58OA9wN02qRGGmCRIf?usp=sharing
+* Link para o vídeo: https://drive.google.com/drive/folders/1co3KrYqTRvGP4W58OA9wN02qRGGmCRIf?usp=sharing
 
 <h4 align="center"> 
 	🚧  Projeto 🚀 Em construção...  🚧
