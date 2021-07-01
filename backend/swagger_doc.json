@@ -1,0 +1,665 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Health Space",
+    "description": "Health Space é um projeto com fins não lucrativos com a intenção integrar tecnologia à saúde, visando o bem estar e a qualidade de vida."
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Usuários",
+      "description": "Rotas dos usuários"
+    },
+    {
+      "name": "Posts",
+      "description": "Rotas dos posts"
+    },
+    {
+      "name": "Tags",
+      "description": "Rotas das tags"
+    }
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "aplication/json"
+  ],
+  "produces": [
+    "aplication/json"
+  ],
+  "paths": {
+    "/createuser": {
+      "post": {
+        "tags": [
+          "Usuários"
+        ],
+        "description": "Essa rota cria um novo usuário!",
+        "parameters": [
+          {
+            "name": "userData",
+            "in": "body",
+            "description": "Dados de um usuário",
+            "required": "True",
+            "type": "Object",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          {
+            "name": "login",
+            "description": "Login de um usuário",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "password",
+            "description": "Senha de um usuário",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "email",
+            "description": "Email de um usuário",
+            "type": "string",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#definitions/User"
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/getallusers": {
+      "get": {
+        "tags": [
+          "Usuários"
+        ],
+        "description": "Essa rota retorna todos os usuários criados!",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#definitions/User"
+            }
+          },
+          "400": {
+            "description": "Nenhum usuário foi encontrado"
+          }
+        }
+      }
+    },
+    "/getuser/{id}": {
+      "get": {
+        "tags": [
+          "Usuários"
+        ],
+        "description": "Essa rota retorna um usuário específico através do seu id!",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Id de um usuário"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#definitions/User"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/updateuser/{id}": {
+      "put": {
+        "tags": [
+          "Usuários"
+        ],
+        "description": "Essa rota atualiza os dados de um usuário específico através do seu id!",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Id de um usuário"
+          },
+          {
+            "name": "email",
+            "description": "Email de um usuário",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#definitions/User"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/deleteuser/{id}": {
+      "delete": {
+        "tags": [
+          "Usuários"
+        ],
+        "description": "Essa rota deleta um usuário específico através do seu id!",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Id de um usuário"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User deleted"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/getlogin": {
+      "get": {
+        "tags": [
+          "Usuários"
+        ],
+        "description": "Essa rota retorna um usuário através do seu nome!",
+        "parameters": [
+          {
+            "name": "login",
+            "description": "Login de um usuário",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "login": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#definitions/User"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/comparepassword/{id}": {
+      "post": {
+        "tags": [
+          "Usuários"
+        ],
+        "description": "Essa rota compara o login e a senha do usuário e valida essas informações!",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "login",
+            "description": "Login de um usuário",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "senha",
+            "description": "Senha de um usuário",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "login": {
+                  "example": "any"
+                },
+                "password\r": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Login efetuado! ou Acesso negado!"
+          }
+        }
+      }
+    },
+    "/createpost": {
+      "post": {
+        "tags": [
+          "Posts"
+        ],
+        "description": "Essa rota cria um novo post!",
+        "parameters": [
+          {
+            "name": "body_text",
+            "description": "Texto de um post",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "user_id",
+            "description": "Id de um usuário",
+            "type": "integer",
+            "in": "query"
+          },
+          {
+            "name": "postCreated",
+            "in": "body",
+            "description": "Dados de um post",
+            "required": "True",
+            "type": "Object",
+            "schema": {
+              "$ref": "#/definitions/Post"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Post criado"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/getallposts": {
+      "get": {
+        "tags": [
+          "Posts"
+        ],
+        "description": "Essa rota retorna todos os posts criados!",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/getpost/{id}": {
+      "get": {
+        "tags": [
+          "Posts"
+        ],
+        "description": "Essa rota retorna um post específico através do seu id!",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "postId",
+            "description": "Id de um post",
+            "type": "integer",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/updatepost/{id}": {
+      "put": {
+        "tags": [
+          "Posts"
+        ],
+        "description": "Essa rota atualiza os dados de um post específico através do seu id!",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "postId",
+            "description": "Id de um post",
+            "type": "integer",
+            "in": "query"
+          },
+          {
+            "name": "bodyText",
+            "description": "Texto de um post",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "body_text": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/deletepost/{id}": {
+      "delete": {
+        "tags": [
+          "Posts"
+        ],
+        "description": "Essa rota deleta um post específico através do seu id!",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "postId",
+            "description": "Id de um post",
+            "type": "integer",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/createtag": {
+      "post": {
+        "tags": [
+          "Tags"
+        ],
+        "description": "Essa rota cria uma nova tag!",
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Nome de uma tag",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "tagCreated",
+            "in": "body",
+            "description": "Dados de uma tag",
+            "required": "True",
+            "type": "Object",
+            "schema": {
+              "$ref": "#/definitions/Tag"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#definitions/Tag"
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/getalltags": {
+      "get": {
+        "tags": [
+          "Tags"
+        ],
+        "description": "Essa rota retorna todas as tags criadas!",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/gettag/{id}": {
+      "get": {
+        "tags": [
+          "Tags"
+        ],
+        "description": "Essa rota retorna uma tag específica através do seu id!",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Id de uma tag"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/updatetag/{id}": {
+      "put": {
+        "tags": [
+          "Tags"
+        ],
+        "description": "Essa rota atualiza os dados de uma tag específica através do seu id!",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Id de uma tag"
+          },
+          {
+            "name": "tagName",
+            "description": "Nome de uma tag",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name\r": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/deletetag/{id}": {
+      "delete": {
+        "tags": [
+          "Tags"
+        ],
+        "description": "Essa rota deleta uma tag específica através do seu id !",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Id de uma tag"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "User": {
+      "type": "object",
+      "properties": {
+        "login": {
+          "type": "string",
+          "example": "Rafael"
+        },
+        "password": {
+          "type": "string",
+          "example": "rafa123"
+        },
+        "email": {
+          "type": "string",
+          "example": "rafael@healthspace.com"
+        }
+      }
+    },
+    "Post": {
+      "type": "object",
+      "properties": {
+        "body_text": {
+          "type": "string",
+          "example": "Texto de exemplo sobre nutrição"
+        },
+        "user_id": {
+          "type": "number",
+          "example": 1
+        }
+      }
+    },
+    "Tag": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Nutrição"
+        }
+      }
+    }
+  }
+}

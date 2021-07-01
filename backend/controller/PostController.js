@@ -7,17 +7,36 @@ const PostTagController = require("./PostTagController");
 
 class PostController {
   async createPost(req, res) {
-    const { body_text, user_id, tags } = req.body;
+    // #swagger.tags = ['Posts']
+    // #swagger.description = 'Essa rota cria um novo post!'
+    const { body_text, user_id } = req.body;
     try {
       const transaction = await sequelize.transaction();
 
       const postCreated = await Post.create(
         {
           body_text: body_text,
+          /* #swagger.parameters['body_text'] = {
+              description: 'Texto de um post',
+              type: 'string'
+          }*/
           user_id: user_id,
+          /* #swagger.parameters['user_id'] = {
+              description: 'Id de um usuário',
+              type: 'integer'
+          }*/
         },
         { transaction }
       );
+      /* #swagger.parameters['postCreated'] = {
+      in: 'body',
+      description: 'Dados de um post',
+      required: 'True',
+      type: 'Object',
+      schema: {
+        $ref: '#/definitions/Post'
+      }
+    } */
 
       for (let index = 0; index < tags.length; index++) {
         const tagId = tags[index];
@@ -41,6 +60,9 @@ class PostController {
         message: "Post criado",
         status: true,
       });
+      /* #swagger.responses[201] = {
+        description: 'Post criado'
+      } */
     } catch (error) {
       transaction.rollback();
 
@@ -53,6 +75,8 @@ class PostController {
   }
 
   async getAllPosts(req, res) {
+    // #swagger.tags = ['Posts']
+    // #swagger.description = 'Essa rota retorna todos os posts criados!'
     try {
       const posts = await Post.findAll();
 
@@ -94,7 +118,13 @@ class PostController {
   // }
 
   async getById(req, res) {
+    // #swagger.tags = ['Posts']
+    // #swagger.description = 'Essa rota retorna um post específico através do seu id!'
     const postId = req.params.id;
+    /* #swagger.parameters['postId'] = {
+              description: 'Id de um post',
+              type: 'integer'
+    }*/
     try {
       const postSearched = await Post.findByPk(postId);
 
@@ -120,8 +150,18 @@ class PostController {
   }
 
   async updatePost(req, res) {
+    // #swagger.tags = ['Posts']
+    // #swagger.description = 'Essa rota atualiza os dados de um post específico através do seu id!'
     const postId = req.params.id;
+    /* #swagger.parameters['postId'] = {
+              description: 'Id de um post',
+              type: 'integer'
+    }*/
     const bodyText = req.body.body_text;
+    /* #swagger.parameters['bodyText'] = {
+              description: 'Texto de um post',
+              type: 'string'
+    }*/
     try {
       const postUpdated = await Post.findByPk(postId);
 
@@ -153,7 +193,13 @@ class PostController {
   }
 
   async deletePost(req, res) {
+    // #swagger.tags = ['Posts']
+    // #swagger.description = 'Essa rota deleta um post específico através do seu id!'
     const postId = req.params.id;
+    /* #swagger.parameters['postId'] = {
+              description: 'Id de um post',
+              type: 'integer'
+    }*/
 
     const transaction = await sequelize.transaction();
     try {
