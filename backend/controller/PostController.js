@@ -9,7 +9,7 @@ class PostController {
   async createPost(req, res) {
     // #swagger.tags = ['Posts']
     // #swagger.description = 'Essa rota cria um novo post!'
-    const { body_text, user_id } = req.body;
+    const { body_text, user_id, titulo } = req.body;
     try {
       const transaction = await sequelize.transaction();
 
@@ -25,6 +25,11 @@ class PostController {
               description: 'Id de um usuário',
               type: 'integer'
           }*/
+          titulo: titulo,
+          /* #swagger.parameters['titulo'] = {
+              description: 'Titulo do post',
+              type: 'string'
+          }*/
         },
         { transaction }
       );
@@ -38,24 +43,7 @@ class PostController {
       }
     } */
 
-      for (let index = 0; index < tags.length; index++) {
-        const tagId = tags[index];
-        let result = await PostTagController.create(
-          postCreated.post_id,
-          tagId,
-          transaction
-        );
-
-        if (!result.status) {
-          transaction.rollback();
-
-          return res.status(400).json({
-            message: result.message,
-          });
-        }
-      }
-
-      transaction.commit();
+      await transaction.commit();
       res.status(201).json({
         message: "Post criado",
         status: true,
@@ -95,27 +83,10 @@ class PostController {
     } catch (error) {
       res.status(404).json({
         status: false,
-        message: "Error",
+        message: error,
       });
     }
   }
-
-  // async test(posts) {
-  //   let result = [];
-  //   await posts.forEach(async (post) => {
-  //     let userPost = await User.findAll({
-  //       where: { user_id: post.user_id },
-  //     });
-
-  //     let obj = {
-  //       postX: post,
-  //       userX: userPost[0],
-  //     };
-
-  //     result.push(obj);
-  //   });
-  //   return result;
-  // }
 
   async getById(req, res) {
     // #swagger.tags = ['Posts']
