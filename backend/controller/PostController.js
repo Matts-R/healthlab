@@ -10,9 +10,9 @@ class PostController {
     // #swagger.tags = ['Posts']
     // #swagger.description = 'Essa rota cria um novo post!'
     const { body_text, user_id, titulo } = req.body;
+    const transaction = await sequelize.transaction();
+    
     try {
-      const transaction = await sequelize.transaction();
-
       const postCreated = await Post.create(
         {
           body_text: body_text,
@@ -56,7 +56,7 @@ class PostController {
 
       res.status(400).json({
         message:
-          "Ops, desculpe mas parece que ocorreu um erro ao criar o post, por favor tente novamente.",
+        error,
         status: false,
       });
     }

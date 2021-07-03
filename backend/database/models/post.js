@@ -18,7 +18,8 @@ module.exports = function(sequelize, DataTypes) {
     },
     edited_at: {
       type: DataTypes.DATE,
-      allowNull: true
+      allowNull: true,
+      defaultValue: Sequelize.Sequelize.literal('CURRENT_TIMESTAMP')
     },
     user_id: {
       type: DataTypes.INTEGER,
