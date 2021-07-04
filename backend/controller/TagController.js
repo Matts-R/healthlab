@@ -68,7 +68,7 @@ class TagController {
     async getTagById(req, res) {
         // #swagger.tags = ['Tags']
         // #swagger.description = 'Essa rota retorna uma tag específica através do seu id!'
-        const { id } = req.params.id
+        const  id  = req.params.id
         /* #swagger.parameters['id'] = {
               description: 'Id de uma tag',
               type: 'integer'
@@ -93,7 +93,7 @@ class TagController {
     async updateTag(req, res) {
         // #swagger.tags = ['Tags']
         // #swagger.description = 'Essa rota atualiza os dados de uma tag específica através do seu id!'
-        const { id } = req.params.id
+        const  id  = req.params.id
         /* #swagger.parameters['id'] = {
               description: 'Id de uma tag',
               type: 'integer'
@@ -125,7 +125,7 @@ class TagController {
     async deleteTag(req, res) {
         // #swagger.tags = ['Tags']
         // #swagger.description = 'Essa rota deleta uma tag específica através do seu id !'
-        const { id } = req.params.id
+        const  id  = req.params.id
         /* #swagger.parameters['id'] = {
               description: 'Id de uma tag',
               type: 'integer'
