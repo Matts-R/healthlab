@@ -84,6 +84,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://www.w3schools.com/css/)
 - [Angular](https://angular.io/start)
+- [Swagger](https://swagger.io/)
 
 ## Integrantes do grupo
 ---
